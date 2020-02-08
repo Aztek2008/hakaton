@@ -1,15 +1,15 @@
 .we-search-section {
     background-color: $main-header-color;
-    padding-bottom: 75px;
+    padding: 55px 30px 75px;
 }
 
-.we-search-title {
+.secondary-title {
     font-family: $header-font-stack-extra-bold;
     font-size: 20px;
     line-height: 60px;
     text-transform: uppercase;
-    text-align: center;
     color: $accent-color-white;
+    margin: 0;
 
     &__span {
         color: $accent-color-azure;
@@ -23,6 +23,7 @@
     align-items: center;
     list-style: none;
     margin: 0;
+    padding: 0;
 
     .we-search-list__item {
         position: relative;
@@ -47,6 +48,7 @@
         color: $main-text-color;
 
         padding-top: 14px;
+        margin: 0;
 
         &--span {
             color: $accent-color-white;
@@ -54,6 +56,20 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 992px) {
 
+    .we-search-section {
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    .we-search-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .we-search-list__item {
+        width: 320px;
+        padding: 14px 0 42px;
+    }
 }
