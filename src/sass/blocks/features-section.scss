@@ -53,4 +53,11 @@
   list-style: none;
 }
 
+.feture-section__p::before {
+  content: '';
+  width: 10px;
+  height: 20px;
+  background-color: #000;
+}
+
 
