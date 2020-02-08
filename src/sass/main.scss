@@ -1,6 +1,21 @@
 /*
  * Все паршалы импортировать в этот файл
  */
-
+@import 'utils/fonts.scss';
 @import 'normalize.scss';
 @import 'base.scss';
+@import 'utils/variables.scss';
+
+
+/*
+ * blocks
+ */
+
+@import 'blocks/header.scss';
+@import 'blocks/features-section.scss';
+@import 'blocks/we-search-section.scss';
+@import 'blocks/video-section.scss';
+@import 'blocks/goit-section.scss';
+@import 'blocks/mission-section.scss';
+@import 'blocks/awarsd-section.scss';
+@import 'blocks/footer.scss';
