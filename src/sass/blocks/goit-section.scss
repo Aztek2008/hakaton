@@ -1,0 +1,22 @@
+.goit-section {
+  background-color: $main-header-color;
+  width: 100%;
+  text-align: center;
+  height: 370px;
+  padding: 96px 0 100px 0;
+
+  &_wrapper {
+    max-width: 695px;
+    margin: 0 auto;
+  }
+}
+
+.some-text {
+
+}
+
+.some-text {
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 25px;
+}
