@@ -4,7 +4,7 @@
 }
 
 .secondary-title {
-    font-family: $header-font-stack-extra-bold;
+    $main-font-stack: 'Acrom';
     font-size: 20px;
     line-height: 60px;
     text-transform: uppercase;
@@ -49,6 +49,7 @@
         color: $main-text-color;
         padding-top: 14px;
         margin: 0;
+        font-weight: 400;
 
         &--span {
             color: $accent-color-white;
