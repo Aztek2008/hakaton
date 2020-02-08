@@ -1,8 +1,17 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+.video-section {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  picture,
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .video-section__button {
@@ -17,10 +26,13 @@
   text-align: center;
   cursor: pointer;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.87);
+  margin: 97px;
 }
 
 .video-section__item {
+  display: block;
+  margin: 0 auto;
   width: 652px;
-  height: 398px;
-  margin: 0;
+  height: 400px;
+  padding: 75px;
 }
