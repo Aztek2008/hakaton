@@ -1,33 +1,38 @@
 header {
-    max-width: 1200px;
     background-image: url(../images/BG.png);
-    margin: 0 auto;
+    padding-top: 40px;
+    height: 600px;
+}
 
-    a {
-        margin-top: 40px;
-        height: 30px;
-        display: block;
-    }
+.container {
+    max-width: 550px;
+}
 
-    .h1 {
-        font-family: $main-font-stack;
-        display: block;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
+.logo-link {
+    height: 30px;
+    display: block;
+}
 
-    .h2 {
-        font-family: $main-font-stack;
-        display: block;
-        margin: 0 auto;
-        margin-top: 30px;
-    }
+.main-header {
+    font-family: $main-font-stack;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
 
-    p {
-        font-family: $main-font-stack;
-    }
+.span-style {
+    font-size: 46px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2.304;
+    left: 330.937px;
+    top: 216.35px;
+    color: rgb(255, 255, 255);
+}
 
-    .content {
-        margin: 0 auto;
-    }
+.main-header__caption {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.541);
+    line-height: 1.429;
+    left: 460.916px;
+    top: 247.217px;
 }
