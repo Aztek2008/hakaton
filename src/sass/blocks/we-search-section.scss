@@ -4,7 +4,8 @@
 }
 
 .secondary-title {
-    font-family: $header-font-stack-extra-bold;
+    font-family: $main-font-stack;
+    font-weight: 900;
     font-size: 20px;
     line-height: 60px;
     text-transform: uppercase;
@@ -44,6 +45,7 @@
 
     .we-search-list__text {
         font-family: $main-font-stack;
+        font-weight: 400;
         font-size: 14px;
         line-height: 21px;
         color: $main-text-color;
