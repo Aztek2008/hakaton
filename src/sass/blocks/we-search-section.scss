@@ -4,12 +4,13 @@
 }
 
 .we-search-title {
-    font-family: $header-font-stack-extra-bold;
+    font-family: $main-font-stack;
     font-size: 20px;
     line-height: 60px;
     text-transform: uppercase;
     text-align: center;
     color: $accent-color-white;
+    font-weight: 900;
 
     &__span {
         color: $accent-color-azure;
@@ -45,7 +46,6 @@
         font-size: 14px;
         line-height: 21px;
         color: $main-text-color;
-
         padding-top: 14px;
 
         &--span {

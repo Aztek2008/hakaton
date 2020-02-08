@@ -2,38 +2,32 @@ header {
     max-width: 1200px;
     background-image: url(../images/BG.png);
     margin: 0 auto;
-}
 
-.content {
-    margin: 0 auto;
-}
+    a {
+        margin-top: 40px;
+        height: 30px;
+        display: block;
+    }
 
-@font-face {
-    font-family: Acrom;
-    src: url(/src/fonts/fonts/Acrom-Bold.woff);
-    src: url(/src/fonts/fonts/Acrom-ExtraBold.woff2)
-}
+    .h1 {
+        font-family: $main-font-stack;
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
 
-a {
-    margin-top: 40px;
-    height: 30px;
-    display: block;
-}
+    .h2 {
+        font-family: $main-font-stack;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 
-.h1 {
-    font-family: Acrom;
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-}
+    p {
+        font-family: $main-font-stack;
+    }
 
-.h2 {
-    font-family: Acrom;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-p {
-    font-family: Acrom;
+    .content {
+        margin: 0 auto;
+    }
 }
