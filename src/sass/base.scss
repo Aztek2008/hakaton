@@ -1,4 +1,4 @@
-@import 'utils/variables.scss';
+// @import 'utils/variables.scss';
 
 html {
   box-sizing: border-box;
@@ -12,12 +12,30 @@ html {
 
 body {
   font-family: $main-font-stack;
-  // margin: 0 auto;
+  width: 100%;
   }
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 .container {
   max-width: 330px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
 
   @media (min-width: 768px) {
     max-width: 709px;
