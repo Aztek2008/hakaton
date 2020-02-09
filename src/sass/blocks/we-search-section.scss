@@ -26,7 +26,7 @@
   margin: 0;
   padding: 0;
 
-  .we-search-list__item {
+  &__item {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -44,7 +44,7 @@
     }
   }
 
-  .we-search-list__text {
+  &__text {
     font-family: $main-font-stack;
     font-weight: 400;
     font-size: 14px;
