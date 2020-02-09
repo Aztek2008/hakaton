@@ -9,8 +9,9 @@ header {
     height: 595px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     height: 600px;
+    background-size: cover;
   }
 
   .container {
@@ -51,7 +52,7 @@ header {
     font-size: 46px;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 1200px) {
     margin-bottom: 25px;
   }
 }
