@@ -1,33 +1,29 @@
 .video-section {
-  .container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+  padding: 75px 0 65px;
+
+  @media (min-width: 768px) {
+    padding: 90px 0;
   }
+
+  @media (min-width: 1200px) {
+    padding: 115px 0 95px;
+  }
+
 
   picture,
   img {
     display: block;
     width: 100%;
-  }
-  
-  img{
-    padding-top: 75px;
 
     @media (min-width: 768px) {
-        padding-top:90px ;
-      }
-    
-      @media (min-width: 992px) {
-        padding-top: 113px;
-      }
+      width: 650px;
+      margin: 0 auto;
+    }
   }
-  
 }
 
 .video-section__button {
+  display: block;
   font-family: $main-font-stack;
   font-weight: 700;
   font-size: 12px;
@@ -39,6 +35,9 @@
   text-align: center;
   box-shadow: 0px 8px 43px 0px rgba(255, 107, 8, 0.59);
   cursor: pointer;
-  margin-top: 40px;
-  margin-bottom: 60px;
+  margin: 40px auto 0;
+
+  @media (min-width: 768px) {
+    margin-top: 65px;
+  }
 }
