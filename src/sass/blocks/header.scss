@@ -1,38 +1,61 @@
 header {
   background-image: url(../images/BG.png);
-  padding-top: 40px;
-  height: 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  height: 450px;
+
+  @media (min-width: 768px) {
+    height: 595px;
+  }
+
+  @media (min-width: 992px) {
+    height: 600px;
+  }
+
+  .container {
+    text-align: center;
+  }
 }
 
 .logo-link {
   width: 96px;
   height: 30px;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin-bottom: 40px;
 }
 
 .main-header {
   font-family: $main-font-stack;
-  color: rgb(255, 255, 255);
-  text-align: center;
+  color: $accent-color-white;
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 28px;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
 }
 
 .span-style {
   display: block;
-  font-size: 46px;
-  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: 900;
   text-transform: uppercase;
-  line-height: 2.304;
-  left: 330.937px;
-  top: 216.35px;
-  color: rgb(255, 255, 255);
+  color: $accent-color-white;
+  margin-bottom: 28px;
+
+  @media (min-width: 768px) {
+    font-size: 46px;
+  }
+
+  @media (min-width: 992px) {
+    margin-bottom: 25px;
+  }
 }
 
 .main-header__caption {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.541);
-  line-height: 1.429;
-  left: 460.916px;
-  top: 247.217px;
+  color: $main-text-color;
 }

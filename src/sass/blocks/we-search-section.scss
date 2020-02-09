@@ -1,19 +1,31 @@
 .we-search-section {
   background-color: $main-header-color;
-  padding: 55px 30px 75px;
+  padding: 70px 0 75px;
 }
 
 .secondary-title {
+  display: block;
   font-family: $main-font-stack;
   font-size: 20px;
   line-height: 60px;
   text-transform: uppercase;
   color: $accent-color-white;
   margin: 0;
+  margin-bottom: 35px;
   font-weight: 900;
+
+
+  @media (min-width: 1200px) {
+    font-size: 36px;
+  }
 
   &__span {
     color: $accent-color-azure;
+
+    @media (min-width: 1200px) {
+      display: block;
+      font-size: 46px;
+    }
   }
 }
 
@@ -26,11 +38,12 @@
   margin: 0;
   padding: 0;
 
-  .we-search-list__item {
+  &__item {
     display: flex;
     justify-content: space-between;
     position: relative;
     padding-bottom: 42px;
+    text-align: left;
 
     &::before {
       display: block;
@@ -40,17 +53,20 @@
       background-color: $accent-color-orange;
       position: absolute;
       left: 0;
-      top: -35px;
+      top: -20px;
+
+      @media (min-width: 1200px) {
+          top: -35px;
+      }
     }
   }
 
-  .we-search-list__text {
+  &__text {
     font-family: $main-font-stack;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: $main-text-color;
-    padding-top: 14px;
     margin: 0;
 
     &--span {
@@ -60,18 +76,39 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+
+  .we-search-section {
+    padding-top: 80px;
+  }
+
+  .secondary-title {
+    font-size: 36px;
+  }
+
   .we-search-list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .we-search-list__item {
-    width: 50%;
-    padding: 14px 0 42px;
+    width: 295px;
+    padding-top: 14px;
+
+    &:not(:nth-child(even)) {
+      margin-right: 60px;
+    }
+
+    &::before {
+      top: -35px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
+
+  .we-search-section {
+    padding-top: 115px;
+  }
 
     .we-search-block {
         width: 1200px;
@@ -91,5 +128,9 @@
 
     .we-search-list__item {
         width: 40%;
+
+        &:not(:nth-child(even)) {
+          margin-right: 94px;
+        }
     }
 }
