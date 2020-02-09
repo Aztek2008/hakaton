@@ -2,12 +2,53 @@
   list-style: none;
   padding-top: 45px;
   margin-bottom: 75px;
-}
 
-.feture-section__h2 {
-  max-width: 270px;
-  color: #0e1f34;
-  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__h2 {
+    max-width: 270px;
+    color: #0e1f34;
+    margin-bottom: 30px;
+    font-weight: 900;
+
+    @media screen and (min-width: 1200px) {
+      width: 258px;
+    }
+  }
+
+  &__span {
+    color: #6a707b;
+  }
+
+  &__container {
+    max-width: 270px;
+    list-style: none;
+    margin-bottom: 24px;
+
+    &:not(:last-child) {
+      padding-right: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 33%;
+      padding: 0px;
+    }
+
+    &::before {
+      content: '.';
+      width: 7px;
+      height: 30px;
+      background-color: #6a707b;
+      opacity: 0.2;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .feture-section__h2--first {
@@ -52,62 +93,13 @@
   }
 }
 
-.feture-section__span {
-  color: #6a707b;
-}
+.feture-section__p {
 
-.feture-section__container {
-  max-width: 270px;
-  list-style: none;
-  margin-bottom: 24px;
-  // margin-right: 40px;
-}
-
-.feture-section__container::before {
-  content: '.';
-  width: 7px;
-  height: 30px;
-  background-color: #6a707b;
-  opacity: 0.2;
-}
-
-@media screen and (min-width: 768px) {
-  .feture-section {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .feture-section__container {
-    width: 33%;
-    padding: 0px;
-  }
-
-  .feture-section__container:not(:last-child) {
-    padding-right: 40px;
-  }
-
-  .feture-section__p {
+  @media screen and (min-width: 768px) {
     width: 156px;
-    padding-bottom: 100px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feture-section {
-    display: flex;
   }
 
-
-
-  .feture-section__container:not(:last-child) {
-    padding-right: 385px;
-  }
-
-  .feture-section__h2 {
-    width: 258px;
-  }
-
-  .feture-section__p {
+  @media screen and (min-width: 1200px) {
     width: 258px;
   }
 }
