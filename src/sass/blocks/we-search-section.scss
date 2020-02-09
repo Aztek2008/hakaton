@@ -1,76 +1,70 @@
 .we-search-section {
-    background-color: $main-header-color;
-    padding: 55px 30px 75px;
+  background-color: $main-header-color;
+  padding: 55px 30px 75px;
 }
 
 .secondary-title {
-    $main-font-stack: 'Acrom';
-    font-size: 20px;
-    line-height: 60px;
-    text-transform: uppercase;
-    color: $accent-color-white;
-    margin: 0;
-    font-weight: 900;
+  font-family: $main-font-stack;
+  font-size: 20px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: $accent-color-white;
+  margin: 0;
+  font-weight: 900;
 
-    &__span {
-        color: $accent-color-azure;
-    }
+  &__span {
+    color: $accent-color-azure;
+  }
 }
 
 .we-search-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .we-search-list__item {
+    position: relative;
+    padding-bottom: 42px;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 12px;
+      height: 12px;
+      background-color: $accent-color-orange;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .we-search-list__text {
+    font-family: $main-font-stack;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $main-text-color;
+    padding-top: 14px;
     margin: 0;
-    padding: 0;
 
-    .we-search-list__item {
-        position: relative;
-        padding-bottom: 42px;
-
-        &::before {
-            display: block;
-            content: '';
-            width: 12px;
-            height: 12px;
-            background-color: $accent-color-orange;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
+    &--span {
+      color: $accent-color-white;
     }
-
-    .we-search-list__text {
-        font-family: $main-font-stack;
-        font-size: 14px;
-        line-height: 21px;
-        color: $main-text-color;
-        padding-top: 14px;
-        margin: 0;
-        font-weight: 400;
-
-        &--span {
-            color: $accent-color-white;
-        }
-    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+  .we-search-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    .we-search-section {
-        padding-left: 60px;
-        padding-right: 0;
-    }
-
-    .we-search-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .we-search-list__item {
-        width: 320px;
-        padding: 14px 0 42px;
-    }
+  .we-search-list__item {
+    width: 320px;
+    padding: 14px 0 42px;
+  }
 }
