@@ -5,6 +5,8 @@
   height: auto;
   padding-top: 96px;
   padding-bottom: 100px;
+  font-size: 16px;
+  line-height: 25px;
 
   &_wrapper {
     margin: 0 auto;
@@ -13,13 +15,14 @@
 
 .logo-link {
   margin-bottom: 45px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.some-text {
+.goit-section > .some-text {
   color: $main-text-color;
-  font-size: 16px;
-  line-height: 25px;
   max-width: 695px;
+  margin: 0 auto;
 }
 
 .azure-span {
