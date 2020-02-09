@@ -11,8 +11,20 @@
   img {
     display: block;
     width: 100%;
-    padding-top: 75px;
+    
   }
+  img{
+    padding-top: 75px;
+
+    @media (min-width: 768px) {
+        padding-top:90px ;
+      }
+    
+      @media (min-width: 992px) {
+        padding-top: 113px;
+      }
+  }
+  
 }
 
 .video-section__button {
@@ -30,5 +42,6 @@
   margin-top: 40px;
   margin-bottom: 60px;
 }
+
 
 
